@@ -11,16 +11,31 @@
 // $greeting = hello();
 // echo $greeting;
 
-function add_up($a, $b){
-    $arr = array(
-        $a,
-        $b,
-        $a + $b,
-    );
-    return $arr;
+function answer(){
+    return 42;
 }
 
-$value = add_up(2 , 4);
+function add_up($a, $b){
+    return $a + $b;
+}
 
-print_r($value);
+$func = "add_up";
+
+$num = $func(5, 10);
+
+echo $num;
+
+
+// function add_up($a, $b){
+//     $arr = array(
+//         $a,
+//         $b,
+//         $a + $b,
+//     );
+//     return $arr;
+// }
+
+// $value = add_up(2 , 4);
+
+// print_r($value);
 ?>
