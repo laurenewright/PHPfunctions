@@ -1,41 +1,28 @@
 <?php
 
-// function hello($name){
-//     if($name == "Mike"){
-//         return "Hello, Mike";
-//     } else {
-//         return "Hello, Stranger";
-//     }
-// }
-
-// $greeting = hello();
-// echo $greeting;
-
-function answer(){
-    return 42;
+function hello($name){
+    if($name == "Mike"){
+        return "Hello, Mike";
+    } else {
+        return "Hello, Stranger";
+    }
 }
+
+$greeting = hello();
+echo $greeting;
+
+
 
 function add_up($a, $b){
-    return $a + $b;
+    $arr = array(
+        $a,
+        $b,
+        $a + $b,
+    );
+    return $arr;
 }
 
-$func = "add_up";
+$value = add_up(2 , 4);
 
-$num = $func(5, 10);
-
-echo $num;
-
-
-// function add_up($a, $b){
-//     $arr = array(
-//         $a,
-//         $b,
-//         $a + $b,
-//     );
-//     return $arr;
-// }
-
-// $value = add_up(2 , 4);
-
-// print_r($value);
+print_r($value);
 ?>
